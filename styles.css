@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  position: relative;
+  background-image: url('Pantai-Indah.jpg'); /* Gambar latar belakang */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparansi untuk efek teks lebih jelas */
+}
+
+header h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Efek bayangan untuk teks */
+  z-index: 2;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+/* Main Section Styles */
+.kuliner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kuliner-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kuliner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.kuliner-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.kuliner-card h2 {
+  font-size: 1.5rem;
+  color: #ff6347;
+  margin: 15px;
+  text-align: center; /* Menjadikan teks rata tengah */
+}
+
+.kuliner-card p {
+  font-size: 1rem;
+  margin: 0 15px 15px;
+  text-align: center; /* Menjadikan teks rata tengah */
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
